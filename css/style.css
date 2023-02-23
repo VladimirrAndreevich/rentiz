@@ -1,0 +1,17 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+body {
+  color: green;
+}/*# sourceMappingURL=style.css.map */

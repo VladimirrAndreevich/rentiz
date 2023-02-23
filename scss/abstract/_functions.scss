@@ -1,0 +1,5 @@
+//? Convertion px => rem
+// Example toRem(32px) => will return 2rem
+@function toRem($value) {
+  @return math.div($value, 16px) + rem;
+}
