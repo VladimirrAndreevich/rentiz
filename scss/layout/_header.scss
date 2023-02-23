@@ -1,0 +1,31 @@
+.header {
+	margin-top: 40px;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__buttons {
+		column-gap: 5px;
+	}
+
+	&__btn {
+		padding: 10px 30px;
+		border: 1px solid $color-accent;
+
+		font-weight: 500;
+		color: $color-white-additional;
+
+		transition-property: background-color color;
+		transition-duration: $transition-duration;
+		transition-timing-function: $transition-timing-function;
+
+		&:hover {
+			color: $color-white-main;
+
+			background-color: $color-accent;
+		}
+	}
+}

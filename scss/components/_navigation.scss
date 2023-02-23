@@ -1,0 +1,44 @@
+.navigation {
+	&__list {
+		display: flex;
+		align-items: center;
+		list-style: none;
+		column-gap: 40px;
+	}
+
+	&__link {
+		position: relative;
+		display: inline-block;
+		padding: 4px 0px;
+
+		color: $color-white-additional;
+		font-weight: 500;
+		text-transform: capitalize;
+
+		transition: color $transition-duration $transition-timing-function;
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 3px;
+
+			background-color: $color-accent;
+			opacity: 0;
+
+			transition: opacity $transition-duration $transition-timing-function;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: $color-white-main;
+
+				&::after {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}

@@ -10,8 +10,79 @@ body {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
   color: #ffffff;
+  background-color: #121b25;
 }
 
-body {
-  color: green;
+a {
+  text-decoration: none;
+}
+
+* img {
+  max-width: 100%;
+}
+
+[class*=__container] {
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  margin-top: 40px;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__buttons {
+  column-gap: 5px;
+}
+.header__btn {
+  padding: 10px 30px;
+  border: 1px solid #1aa090;
+  font-weight: 500;
+  color: #d6d6d6;
+  transition-property: background-color color;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+}
+.header__btn:hover {
+  color: #ffffff;
+  background-color: #1aa090;
+}
+
+.navigation__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  column-gap: 40px;
+}
+.navigation__link {
+  position: relative;
+  display: inline-block;
+  padding: 4px 0px;
+  color: #d6d6d6;
+  font-weight: 500;
+  text-transform: capitalize;
+  transition: color 0.4s ease;
+}
+.navigation__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #1aa090;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+@media (any-hover: hover) {
+  .navigation__link:hover {
+    color: #ffffff;
+  }
+  .navigation__link:hover::after {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -10,4 +10,14 @@ body {
 	font-family: $font-main;
 	font-weight: 400;
 	color: $color-white-main;
+
+	background-color: $color-bg;
+}
+
+a {
+	text-decoration: none;
+}
+
+* img {
+	max-width: 100%;
 }
