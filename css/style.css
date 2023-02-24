@@ -248,6 +248,9 @@ a {
   text-transform: capitalize;
   cursor: pointer;
 }
+.filter__btn button:active {
+  background-color: #1a8074;
+}
 
 .block-filter {
   position: relative;

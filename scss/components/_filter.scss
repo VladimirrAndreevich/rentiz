@@ -19,6 +19,10 @@
 			text-transform: capitalize;
 
 			cursor: pointer;
+
+			&:active {
+				background-color: color.scale($color-accent, $blackness: 20%);
+			}
 		}
 	}
 }
