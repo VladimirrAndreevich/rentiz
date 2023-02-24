@@ -23,7 +23,18 @@
 			&:active {
 				background-color: color.scale($color-accent, $blackness: 20%);
 			}
+			@media (max-width: 576px) {
+				padding-top: 12px;
+				padding-bottom: 12px;
+			}
 		}
+	}
+
+	@media (max-width: 576px) {
+		height: auto;
+		position: static;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(3, 1fr);
 	}
 }
 
@@ -33,7 +44,17 @@
 	align-items: center;
 	justify-content: left;
 
-	padding-left: 40px;
+	// values: 		min 20px 	max 40px
+	// viewport:	min 320px max 1420px
+	padding-left: clamp(1.25rem, 0.886rem + 1.82vw, 2.5rem);
+
+	@media (max-width: 576px) {
+		padding: 15px;
+
+		&:not(:first-child) {
+			border-top: 1px solid #e8e8e8;
+		}
+	}
 
 	&__type {
 		color: #858585;
@@ -87,6 +108,7 @@
 		border-radius: 0 0 10px 10px;
 		overflow: hidden;
 		opacity: 0;
+		z-index: 1;
 
 		&_active {
 			display: flex;
