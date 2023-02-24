@@ -12,6 +12,9 @@ body {
   color: #ffffff;
   background-color: #121b25;
 }
+body._lock {
+  overflow: hidden;
+}
 
 a {
   text-decoration: none;
@@ -28,12 +31,18 @@ a {
 }
 
 .header {
-  margin-top: 40px;
+  margin-top: clamp(1.25rem, 0.886rem + 1.82vw, 2.5rem);
 }
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  column-gap: 20px;
+}
+@media (max-width: 350px) {
+  .header__logo {
+    width: 100px;
+  }
 }
 .header__buttons {
   column-gap: 5px;
@@ -51,12 +60,27 @@ a {
   color: #ffffff;
   background-color: #1aa090;
 }
+@media (max-width: 576px) {
+  .header__btn {
+    padding: 7px 15px;
+  }
+  .header__btn.login {
+    display: none;
+  }
+}
 
 .navigation__list {
   display: flex;
   align-items: center;
   list-style: none;
-  column-gap: 40px;
+  column-gap: clamp(1.25rem, -0.222rem + 3.07vw, 2.5rem);
+}
+@media (max-width: 992px) {
+  .navigation__list {
+    flex-direction: column;
+    column-gap: 0;
+    justify-content: center;
+  }
 }
 .navigation__link {
   position: relative;
@@ -84,5 +108,75 @@ a {
   }
   .navigation__link:hover::after {
     opacity: 1;
+  }
+}
+@media (max-width: 992px) {
+  .navigation__link {
+    font-size: 1.875rem;
+    line-height: 50px;
+  }
+}
+.navigation-icon {
+  display: none;
+}
+@media (max-width: 992px) {
+  .navigation-icon {
+    position: relative;
+    display: block;
+    height: 18px;
+    width: 30px;
+    cursor: pointer;
+    z-index: 5;
+  }
+  .navigation-icon .navigation__line {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition-property: transform top bottom;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+  }
+  .navigation-icon .navigation__line:first-child {
+    top: 0;
+  }
+  .navigation-icon .navigation__line:last-child {
+    top: auto;
+    bottom: 0;
+  }
+  .navigation-icon._active .navigation__line {
+    transform: scale(0);
+  }
+  .navigation-icon._active .navigation__line:first-child {
+    transform: rotate(-45deg);
+    top: calc(50% - 1px);
+  }
+  .navigation-icon._active .navigation__line:last-child {
+    transform: rotate(45deg);
+    bottom: calc(50% - 1px);
+  }
+}
+@media (max-width: 350px) {
+  .navigation-icon {
+    width: 25px;
+  }
+}
+@media (max-width: 992px) {
+  .navigation {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 80vw;
+    background-color: #1aa090;
+    overflow: auto;
+    transition: left 0.4s ease;
+  }
+  .navigation._active {
+    left: 0;
   }
 }/*# sourceMappingURL=style.css.map */

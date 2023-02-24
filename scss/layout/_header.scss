@@ -1,10 +1,18 @@
 .header {
-	margin-top: 40px;
+	margin-top: clamp(1.25rem, 0.886rem + 1.82vw, 2.5rem);
 
 	&__container {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+
+		column-gap: 20px;
+	}
+
+	&__logo {
+		@media (max-width: 350px) {
+			width: 100px;
+		}
 	}
 
 	&__buttons {
@@ -26,6 +34,14 @@
 			color: $color-white-main;
 
 			background-color: $color-accent;
+		}
+
+		@media (max-width: 576px) {
+			padding: 7px 15px;
+
+			&.login {
+				display: none;
+			}
 		}
 	}
 }
