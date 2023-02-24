@@ -1,0 +1,38 @@
+.hero {
+	// values: 		min 20px 	max 95px
+	// viewport:	min 320px max 1420px
+	margin-top: clamp(1.25rem, -0.114rem + 6.82vw, 5.938rem);
+	&__container {
+		display: flex;
+		align-items: center;
+		column-gap: 20px;
+	}
+
+	&__content {
+		flex: 0 0 50%;
+		padding-bottom: 160px;
+	}
+
+	&__title {
+		font-weight: 600;
+		// values: 		min 30px 	max 68px
+		// viewport:	min 320px max 1420px
+		font-size: clamp(1.875rem, 1.184rem + 3.45vw, 4.25rem);
+		line-height: 1.26;
+
+		text-transform: capitalize;
+	}
+
+	&__description {
+		margin-top: 18px;
+	}
+
+	&__filter {
+		position: absolute;
+		margin-top: 60px;
+		width: 890px;
+		height: 100px;
+
+		background-color: $color-white-main;
+	}
+}

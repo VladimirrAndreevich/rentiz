@@ -1,0 +1,13 @@
+@keyframes appearDropdown {
+	to {
+		top: 105%;
+		opacity: 1;
+	}
+}
+
+@keyframes disappearDown {
+	to {
+		top: 100%;
+		opacity: 0;
+	}
+}
