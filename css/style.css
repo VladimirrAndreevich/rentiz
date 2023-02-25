@@ -163,6 +163,106 @@ a {
   flex: 0 0 auto;
 }
 
+.popular {
+  padding-top: clamp(5.625rem, 4.352rem + 6.36vw, 10rem);
+  padding-bottom: clamp(5.625rem, 4.352rem + 6.36vw, 10rem);
+  background: #1a242f url(../img/residence/residence-bg.png) no-repeat center center/cover;
+}
+.popular__container {
+  position: relative;
+}
+.popular__swiper {
+  margin-top: clamp(1.25rem, 0.886rem + 1.82vw, 2.5rem);
+}
+.popular-slide__name {
+  margin-top: 22px;
+  font-weight: 600;
+  font-size: 1.625rem;
+  line-height: 1.26;
+  text-transform: capitalize;
+}
+.popular-slide__location {
+  margin-top: 3px;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #d6d6d6;
+}
+.popular-slide__characteristics {
+  margin-top: clamp(0.5rem, 0.355rem + 0.73vw, 1rem);
+}
+.popular__slider-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: clamp(0.938rem, 0.483rem + 2.27vw, 2.5rem);
+}
+@media (max-width: 425px) {
+  .popular__slider-buttons_top {
+    display: none;
+  }
+}
+.popular__slider-buttons_bottom {
+  display: none;
+}
+@media (max-width: 425px) {
+  .popular__slider-buttons_bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    column-gap: 60px;
+  }
+}
+.popular__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popular__button {
+  width: clamp(3.125rem, 2.616rem + 2.55vw, 4.875rem);
+  height: clamp(3.125rem, 2.616rem + 2.55vw, 4.875rem);
+  border-radius: 50%;
+  border: 1px solid #a9adb1;
+  background: url(../img/icon/arrow-slider.svg) no-repeat center right 51%;
+  cursor: pointer;
+}
+.popular__button-next {
+  transform: rotate(180deg);
+}
+.popular__button.swiper-button-disabled {
+  opacity: 0.5;
+  cursor: initial;
+}
+
+.characteristics {
+  display: flex;
+  align-items: center;
+  column-gap: clamp(0.75rem, 0.605rem + 0.73vw, 1.25rem);
+}
+.characteristics div {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.characteristics div::before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 4px;
+}
+.characteristics__bed::before {
+  background-image: url(../img/icon/residence/double-bed.svg);
+}
+.characteristics__bath::before {
+  background-image: url(../img/icon/residence/bath.svg);
+}
+.characteristics__sqft::before {
+  background-image: url(../img/icon/residence/vector-square.svg);
+}
+
 .navigation {
   z-index: 5;
 }

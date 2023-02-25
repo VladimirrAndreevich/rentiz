@@ -1,0 +1,140 @@
+.popular {
+	// values: 		min 90px 	max 160px
+	// viewport:	min 320px max 1420px
+	padding-top: clamp(5.625rem, 4.352rem + 6.36vw, 10rem);
+	padding-bottom: clamp(5.625rem, 4.352rem + 6.36vw, 10rem);
+
+	background: #1a242f url(../img/residence/residence-bg.png) no-repeat center
+		center/cover;
+
+	// background-color: #1a242f;
+
+	&__container {
+		position: relative;
+	}
+	&__swiper {
+		// values: 		min 20px 	max 40px
+		// viewport:	min 320px max 1420px
+		margin-top: clamp(1.25rem, 0.886rem + 1.82vw, 2.5rem);
+	}
+
+	&-slide {
+		&__name {
+			margin-top: 22px;
+			font-weight: 600;
+			font-size: toRem(26px);
+			line-height: 1.26;
+			text-transform: capitalize;
+		}
+		&__location {
+			margin-top: 3px;
+			font-size: toRem(18px);
+			line-height: 1.7;
+			color: $color-white-additional;
+		}
+		&__characteristics {
+			// values: 		min 8px 	max 16px
+			// viewport:	min 320px max 1420px
+			margin-top: clamp(0.5rem, 0.355rem + 0.73vw, 1rem);
+		}
+	}
+
+	&__slider-buttons {
+		// position: absolute;
+		// bottom: 240px;
+		// left: -85px;
+		// right: -85px;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		// values: 		min 15px 	max 40px
+		// viewport:	min 320px max 1420px
+		column-gap: clamp(0.938rem, 0.483rem + 2.27vw, 2.5rem);
+
+		// transform: translateY(50%);
+
+		&_top {
+			@media (max-width: 425px) {
+				display: none;
+			}
+		}
+		&_bottom {
+			display: none;
+			@media (max-width: 425px) {
+				display: flex;
+				justify-content: center;
+				margin-top: 20px;
+				column-gap: 60px;
+			}
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__button {
+		// values: 		min 50px 	max 780px
+		// viewport:	min 320px max 1420px
+		width: clamp(3.125rem, 2.616rem + 2.55vw, 4.875rem);
+		height: clamp(3.125rem, 2.616rem + 2.55vw, 4.875rem);
+		border-radius: 50%;
+		border: 1px solid #a9adb1;
+
+		background: url(../img/icon/arrow-slider.svg) no-repeat center right 51%;
+
+		cursor: pointer;
+		&-next {
+			transform: rotate(180deg);
+		}
+
+		&.swiper-button-disabled {
+			opacity: 0.5;
+			cursor: initial;
+		}
+	}
+}
+
+.characteristics {
+	display: flex;
+	align-items: center;
+	// values: 		min 12px 	max 20px
+	// viewport:	min 320px max 1420px
+	column-gap: clamp(0.75rem, 0.605rem + 0.73vw, 1.25rem);
+	& div {
+		display: flex;
+		align-items: center;
+
+		font-size: toRem(16px);
+		line-height: toRem(19px);
+		text-transform: capitalize;
+		color: $color-white-main;
+
+		&::before {
+			content: "";
+
+			display: inline-block;
+			width: 22px;
+			height: 22px;
+			margin-right: 4px;
+		}
+	}
+	&__bed {
+		&::before {
+			background-image: url(../img/icon/residence/double-bed.svg);
+		}
+	}
+	&__bath {
+		&::before {
+			background-image: url(../img/icon/residence/bath.svg);
+		}
+	}
+	&__sqft {
+		&::before {
+			background-image: url(../img/icon/residence/vector-square.svg);
+		}
+	}
+}

@@ -32,3 +32,32 @@ if (filter) {
 		});
 	});
 }
+
+// Residence Swiper
+var swiper = new Swiper(".popular__swiper", {
+	slidesPerView: 1,
+	spaceBetween: 20,
+	grabCursor: true,
+	navigation: {
+		nextEl: ".popular__button-next",
+		prevEl: ".popular__button-prev",
+	},
+	breakpoints: {
+		476: {
+			slidesPerView: 1.5,
+			spaceBetween: 20,
+		},
+		630: {
+			slidesPerView: 2,
+			spaceBetween: 20,
+		},
+		800: {
+			slidesPerView: 2.5,
+			spaceBetween: 20,
+		},
+		950: {
+			slidesPerView: 3,
+			spaceBetween: 20,
+		},
+	},
+});
