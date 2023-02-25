@@ -1,0 +1,85 @@
+.choose {
+	// values: 		min 90px 	max 160px
+	// viewport:	min 320px max 1420px
+	padding-top: clamp(5.625rem, 4.352rem + 6.36vw, 10rem);
+	padding-bottom: clamp(5.625rem, 4.352rem + 6.36vw, 10rem);
+
+	&__title {
+		text-align: center;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: center;
+		// values: 		min 20px 	max 100px
+		// viewport:	min 320px max 1420px
+		column-gap: clamp(1.25rem, -0.205rem + 7.27vw, 6.25rem);
+
+		// values: 		min 20px 	max 60px
+		// viewport:	min 320px max 1420px
+		margin-top: clamp(1.25rem, 0.523rem + 3.64vw, 3.75rem);
+
+		list-style-type: none;
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+			// values: 		min 20px 	max 40px
+			// viewport:	min 320px max 1420px
+			row-gap: clamp(1.25rem, 0.886rem + 1.82vw, 2.5rem);
+		}
+	}
+
+	&__img {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		// values: 		min 100px 	max 180px
+		// viewport:	min 320px max 1420px
+		width: clamp(6.25rem, 4.795rem + 7.27vw, 11.25rem);
+		height: clamp(6.25rem, 4.795rem + 7.27vw, 11.25rem);
+		border-radius: 50%;
+
+		background-color: color.scale($color-accent, $blackness: 50%);
+
+		& img {
+			// values: 		min 40px 	max 76px
+			// viewport:	min 320px max 1420px
+			// width: clamp(2.5rem, 1.845rem + 3.27vw, 4.75rem);
+			width: 40%;
+		}
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+
+		flex-basis: 33%;
+
+		@media (max-width: 768px) and (min-width: 552px) {
+			// values: 		min 30px 	max 80px
+			// viewport:	min 552px max 768px
+			padding-left: clamp(1.875rem, -6.111rem + 23.15vw, 5rem);
+			padding-right: clamp(1.875rem, -6.111rem + 23.15vw, 5rem);
+		}
+
+		&-title {
+			// values: 		min 20px 	max 36px
+			// viewport:	min 320px max 1420px
+			margin-top: clamp(1.25rem, 0.959rem + 1.45vw, 2.25rem);
+
+			font-weight: 600;
+			font-size: toRem(26px);
+			line-height: 1.26;
+			text-transform: capitalize;
+		}
+		&-description {
+			margin-top: 11px;
+
+			color: $color-white-additional;
+			font-size: toRem(18px);
+			line-height: 1.7;
+		}
+	}
+}
