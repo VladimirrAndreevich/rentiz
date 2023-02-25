@@ -96,6 +96,15 @@
 			cursor: initial;
 		}
 	}
+
+	&__button-link {
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		// values: 		min 20px 	max 68px
+		// viewport:	min 320px max 1420px
+		margin-top: clamp(1.25rem, 0.377rem + 4.36vw, 4.25rem);
+	}
 }
 
 .characteristics {

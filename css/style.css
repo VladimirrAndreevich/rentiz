@@ -232,6 +232,12 @@ a {
   opacity: 0.5;
   cursor: initial;
 }
+.popular__button-link {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: clamp(1.25rem, 0.377rem + 4.36vw, 4.25rem);
+}
 
 .characteristics {
   display: flex;
@@ -504,4 +510,18 @@ a {
   line-height: 1.26;
   text-transform: capitalize;
   text-align: left;
+}
+
+.button {
+  display: inline-block;
+  padding: 22px 42px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  text-transform: capitalize;
+  background-color: #1aa090;
+}
+.button:active {
+  background-color: #1a8074;
 }/*# sourceMappingURL=style.css.map */

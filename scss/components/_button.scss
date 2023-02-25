@@ -1,0 +1,16 @@
+.button {
+	display: inline-block;
+	padding: 22px 42px;
+
+	color: $color-white-main;
+	font-weight: 500;
+	font-size: toRem(24px);
+	line-height: toRem(28px);
+	text-transform: capitalize;
+
+	background-color: $color-accent;
+
+	&:active {
+		background-color: color.scale($color-accent, $blackness: 20%);
+	}
+}
