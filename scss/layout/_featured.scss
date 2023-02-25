@@ -1,0 +1,23 @@
+.featured {
+	// values: 		min 90px 	max 180px
+	// viewport:	min 320px max 1420px
+	padding-top: clamp(5.625rem, 3.989rem + 8.18vw, 11.25rem);
+	padding-bottom: clamp(5.625rem, 3.989rem + 8.18vw, 11.25rem);
+
+	&__brands {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 50px;
+		margin-top: 50px;
+		overflow: auto;
+
+		@media (max-width: 576px) {
+			flex-direction: column;
+		}
+	}
+
+	&__brand {
+		flex: 0 0 auto;
+	}
+}

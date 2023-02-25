@@ -3,13 +3,13 @@
 	// viewport:	min 320px max 1420px
 	margin-top: clamp(1.25rem, -0.114rem + 6.82vw, 5.938rem);
 
-	@media (min-width: 1200px) {
+	@media (min-width: 1300px) {
 		&::after {
 			content: "";
 			position: absolute;
 			right: 0;
 			// top: 60%;
-			top: 556px;
+			top: 530px;
 
 			height: 482px;
 			width: 120px;
