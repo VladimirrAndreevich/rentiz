@@ -469,16 +469,24 @@ a {
   display: flex;
   align-items: center;
 }
-@media (max-width: 768px) {
-  .help__img {
-    display: none;
-  }
+.help__item {
+  flex: 0 0 350px;
+  aspect-ratio: 7/11;
 }
-.help__img:nth-child(2) {
+.help__item img {
+  height: 100%;
+  object-fit: cover;
+}
+.help__item:nth-child(2) {
   margin-left: 20px;
 }
 @media (max-width: 1200px) {
-  .help__img:nth-child(2) {
+  .help__item:nth-child(2) {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .help__item {
     display: none;
   }
 }
