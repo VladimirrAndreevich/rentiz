@@ -61,3 +61,15 @@ var swiper = new Swiper(".popular__swiper", {
 		},
 	},
 });
+
+// Reviews slider
+var reviewrs__swiper = new Swiper(".reviews__swiper", {
+	slidesPerView: 1,
+	spaceBetween: 20,
+	grabCursor: true,
+	autoHeight: true,
+	navigation: {
+		nextEl: ".reviews__slider-next",
+		prevEl: ".reviews__slider-prev",
+	},
+});
