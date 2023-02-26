@@ -542,6 +542,7 @@ a {
 }
 
 .footer {
+  position: relative;
   padding-top: clamp(2.5rem, 0.227rem + 11.36vw, 8.75rem);
   background-color: #1a242f;
 }
@@ -550,6 +551,14 @@ a {
   font-size: 1.125rem;
   line-height: 1.7;
   color: #d6d6d6;
+}
+.footer__line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  transform: translateY(-15px);
+  background-color: #303a44;
 }
 .footer__socials {
   margin-top: clamp(0.938rem, 0.506rem + 2.16vw, 2.125rem);
@@ -619,20 +628,10 @@ a {
 }
 .footer__copyrights {
   margin-top: clamp(1.875rem, 0.284rem + 7.95vw, 6.25rem);
-  position: relative;
   display: flex;
   justify-content: space-between;
   padding-top: 15px;
   padding-bottom: 15px;
-}
-.footer__copyrights::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background-color: #303a44;
 }
 .footer__copyrights-text {
   font-size: 1.125rem;

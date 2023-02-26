@@ -1,4 +1,6 @@
 .footer {
+	position: relative;
+
 	// values: 		min 40px 	max 140px
 	// viewport:	min 320px max 1420px
 	padding-top: clamp(2.5rem, 0.227rem + 11.36vw, 8.75rem);
@@ -12,6 +14,16 @@
 		font-size: toRem(18px);
 		line-height: 1.7;
 		color: $color-white-additional;
+	}
+
+	&__line {
+		position: absolute;
+		left: 0;
+		right: 0;
+		height: 1px;
+
+		transform: translateY(-15px);
+		background-color: #303a44;
 	}
 
 	&__socials {
@@ -116,25 +128,25 @@
 		// viewport:	min 320px max 1420px
 		margin-top: clamp(1.875rem, 0.284rem + 7.95vw, 6.25rem);
 
-		position: relative;
+		// position: relative;
 		display: flex;
 		justify-content: space-between;
 
 		padding-top: 15px;
 		padding-bottom: 15px;
 
-		&::before {
-			content: "";
+		// &::before {
+		// 	content: "";
 
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
+		// 	position: absolute;
+		// 	top: 0;
+		// 	left: 0;
+		// 	right: 0;
 
-			height: 1px;
+		// 	height: 1px;
 
-			background-color: #303a44;
-		}
+		// 	background-color: #303a44;
+		// }
 	}
 
 	&__copyrights-text {
