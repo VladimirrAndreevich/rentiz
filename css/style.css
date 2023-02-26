@@ -496,6 +496,9 @@ a {
     text-align: center;
   }
 }
+.help__title {
+  max-width: 550px;
+}
 .help__description {
   margin-top: clamp(0.625rem, 0.352rem + 1.36vw, 1.375rem);
   font-size: 1.125rem;

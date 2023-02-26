@@ -47,6 +47,10 @@
 		}
 	}
 
+	&__title {
+		max-width: 550px;
+	}
+
 	&__description {
 		// values: 		min 10px 	max 22px
 		// viewport:	min 320px max 1420px
