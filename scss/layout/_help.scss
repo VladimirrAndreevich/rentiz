@@ -1,4 +1,5 @@
 .help {
+	position: relative;
 	// values: 		min 90px 	max 160px
 	// viewport:	min 320px max 1420px
 	padding-top: clamp(5.625rem, 4.352rem + 6.36vw, 10rem);
@@ -42,6 +43,12 @@
 		@media (max-width: 768px) {
 			display: none;
 		}
+	}
+
+	&__decor2 {
+		position: absolute;
+		bottom: -110px;
+		right: 0px;
 	}
 
 	&__content {

@@ -479,6 +479,7 @@ a {
 }
 
 .help {
+  position: relative;
   padding-top: clamp(5.625rem, 4.352rem + 6.36vw, 10rem);
   padding-bottom: clamp(5.625rem, 4.352rem + 6.36vw, 10rem);
   background: linear-gradient(270deg, #1a242f 0.01%, rgba(26, 36, 47, 0) 82.97%);
@@ -507,6 +508,11 @@ a {
   .help__item {
     display: none;
   }
+}
+.help__decor2 {
+  position: absolute;
+  bottom: -110px;
+  right: 0px;
 }
 .help__content {
   margin-left: clamp(0.938rem, -0.085rem + 5.11vw, 3.75rem);
