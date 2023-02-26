@@ -1,8 +1,11 @@
 .begin {
+	position: relative;
 	// values: 		min 40px 	max 180px
 	// viewport:	min 320px max 1420px
 	padding-top: clamp(2.5rem, -0.045rem + 12.73vw, 11.25rem);
 	padding-bottom: clamp(2.5rem, -0.045rem + 12.73vw, 11.25rem);
+
+	overflow: hidden;
 	&__container {
 		display: flex;
 		align-items: center;
@@ -14,6 +17,20 @@
 
 		@media (max-width: 968px) {
 			flex-direction: column;
+		}
+	}
+
+	&__decor1 {
+		position: absolute;
+		left: -100px;
+		bottom: -100px;
+
+		@media (max-width: 1600px) and (min-width: 1200px) {
+			left: clamp(-18.75rem, -46.875rem + 37.5vw, -9.375rem);
+			bottom: -150px;
+		}
+		@media (max-width: 1199px) {
+			display: none;
 		}
 	}
 
