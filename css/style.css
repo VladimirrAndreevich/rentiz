@@ -541,6 +541,110 @@ a {
   margin-top: clamp(0.938rem, 0.256rem + 3.41vw, 2.813rem);
 }
 
+.footer {
+  padding-top: clamp(2.5rem, 0.227rem + 11.36vw, 8.75rem);
+  background-color: #1a242f;
+}
+.footer__description {
+  margin-top: clamp(0.438rem, 0.097rem + 1.7vw, 1.375rem);
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #d6d6d6;
+}
+.footer__socials {
+  margin-top: clamp(0.938rem, 0.506rem + 2.16vw, 2.125rem);
+}
+.footer__item-title {
+  margin-bottom: 11px;
+  font-weight: 600;
+  font-size: 1.625rem;
+  line-height: 1.26;
+  text-transform: capitalize;
+}
+.footer__main {
+  display: flex;
+  justify-content: space-between;
+  column-gap: clamp(2.188rem, -5.543rem + 16.1vw, 8.75rem);
+}
+.footer__menu {
+  display: flex;
+  column-gap: clamp(1.875rem, -5.855rem + 16.1vw, 8.438rem);
+}
+.footer__list {
+  list-style-type: none;
+}
+@media (max-width: 768px) {
+  .footer__main {
+    flex-direction: column;
+  }
+  .footer__menu {
+    justify-content: space-between;
+    order: -1;
+    margin-bottom: clamp(1.25rem, 0.357rem + 4.46vw, 2.5rem);
+  }
+  .footer__copyrights {
+    flex-direction: column;
+    row-gap: clamp(0.938rem, 0.268rem + 3.35vw, 1.875rem);
+  }
+}
+@media (max-width: 598px) {
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    text-align: center;
+  }
+  .footer__description {
+    max-width: 400px;
+  }
+  .footer__menu {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: clamp(1.25rem, -0.189rem + 7.19vw, 2.5rem);
+  }
+  .footer__copyrights {
+    text-align: center;
+  }
+}
+.footer__link {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #d6d6d6;
+  transition: color 0.4s ease;
+}
+.footer__link:hover {
+  color: #ffffff;
+}
+.footer__copyrights {
+  margin-top: clamp(1.875rem, 0.284rem + 7.95vw, 6.25rem);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.footer__copyrights::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #303a44;
+}
+.footer__copyrights-text {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #d6d6d6;
+}
+.footer__design-by {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #d6d6d6;
+}
+
 .navigation {
   z-index: 5;
 }
