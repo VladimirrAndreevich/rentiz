@@ -1,0 +1,40 @@
+.socials {
+	display: flex;
+	align-items: center;
+	// values: 		min 12px 	max 30px
+	// viewport:	min 320px max 1420px
+	column-gap: clamp(0.75rem, 0.341rem + 2.05vw, 1.875rem);
+	&__item {
+		& svg {
+			width: 22px;
+			height: 22px;
+
+			fill: #555e68;
+
+			transition: fill $transition-duration $transition-timing-function;
+
+			&.socials-youtube {
+				width: 21px;
+				height: 15px;
+			}
+			&.socials-twitter {
+				width: 21px;
+				height: 17px;
+			}
+			&.socials-instagram {
+				width: 18px;
+				height: 18px;
+			}
+			&.socials-facebook {
+				width: 20px;
+				height: 20px;
+			}
+		}
+
+		&:hover {
+			& svg {
+				fill: $color-white-main;
+			}
+		}
+	}
+}
