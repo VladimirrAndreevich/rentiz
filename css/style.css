@@ -1002,7 +1002,7 @@ a {
   background-color: #fff;
   border-radius: 8px;
   list-style-type: none;
-  width: 20vw;
+  width: 320px;
   box-shadow: 0px 0px 4px 4px rgba(150, 157, 249, 0.16);
   padding: 0;
   padding: 6px;
@@ -1017,7 +1017,13 @@ a {
 .more-button-list li {
   opacity: 0;
 }
+@media (max-width: 425px) {
+  .more-button-list {
+    width: clamp(12.5rem, -10.357rem + 114.29vw, 20rem);
+  }
+}
 .more-button-color {
+  flex-shrink: 0;
   border: none;
   background: none;
   width: 25px;
