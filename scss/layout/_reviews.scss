@@ -7,6 +7,8 @@
 
 		z-index: -1;
 
+		stroke: var(--color-accent);
+
 		@media (max-width: 1600px) and (min-width: 1130px) {
 			left: clamp(-16.25rem, -47.806rem + 44.68vw, -3.125rem);
 		}
@@ -27,7 +29,7 @@
 
 		font-size: toRem(260px);
 		line-height: 82px;
-		color: $color-accent;
+		color: var(--color-accent);
 	}
 
 	&-slide {
@@ -78,7 +80,8 @@
 		}
 		&.swiper-button-disabled {
 			& svg {
-				fill: color.scale($color-white-main, $blackness: 50%);
+				// fill: var(--color-accent-darken);
+				opacity: 0.4;
 				cursor: initial;
 			}
 		}

@@ -8,9 +8,10 @@
 	line-height: toRem(28px);
 	text-transform: capitalize;
 
-	background-color: $color-accent;
+	background-color: var(--color-accent);
 
-	&:active {
-		background-color: color.scale($color-accent, $blackness: 20%);
+	transition: background-color $transition-duration $transition-timing-function;
+	&:hover {
+		background-color: var(--color-accent-darken);
 	}
 }

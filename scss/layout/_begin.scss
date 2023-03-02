@@ -25,6 +25,8 @@
 		left: -100px;
 		bottom: -100px;
 
+		stroke: var(--color-accent);
+
 		@media (max-width: 1600px) and (min-width: 1200px) {
 			left: clamp(-18.75rem, -46.875rem + 37.5vw, -9.375rem);
 			bottom: -150px;
@@ -33,7 +35,6 @@
 			display: none;
 		}
 	}
-
 
 	&__content {
 		@media (max-width: 480px) {

@@ -73,3 +73,34 @@ var reviewrs__swiper = new Swiper(".reviews__swiper", {
 		prevEl: ".reviews__slider-prev",
 	},
 });
+
+// Additionl Button
+
+document.querySelector("#more-button").addEventListener("click", function () {
+	document.querySelector("#list-container").classList.toggle("active");
+});
+
+// Set Initial Colors to main color
+let color = getComputedStyle(document.documentElement)
+	.getPropertyValue("--color-accent")
+	.replaceAll(" ", "");
+document.getElementById("main-color").setAttribute("value", color);
+
+// Change color by changing of color picker
+document.getElementById("main-color").addEventListener("change", () => {
+	color = document.getElementById("main-color").value;
+	document.documentElement.style.setProperty("--color-accent", color);
+});
+
+// Set Initial Colors to additional color
+let colorAdditional = getComputedStyle(document.documentElement)
+	.getPropertyValue("--color-accent-darken")
+	.replaceAll(" ", "");
+document
+	.getElementById("adiditional-color")
+	.setAttribute("value", colorAdditional);
+// Change color by changing of color picker
+document.getElementById("adiditional-color").addEventListener("change", () => {
+	color = document.getElementById("adiditional-color").value;
+	document.documentElement.style.setProperty("--color-accent-darken", color);
+});

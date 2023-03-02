@@ -35,7 +35,7 @@
 			right: 0;
 			height: 3px;
 
-			background-color: $color-accent;
+			background-color: var(--color-accent);
 			opacity: 0;
 
 			transition: opacity $transition-duration $transition-timing-function;
@@ -121,7 +121,7 @@
 		height: 100vh;
 		width: 80vw;
 
-		background-color: $color-accent;
+		background-color: var(--color-accent);
 
 		overflow: auto;
 
