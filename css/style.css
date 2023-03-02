@@ -1078,4 +1078,10 @@ a {
   align-self: flex-end;
   transition: transform 300ms cubic-bezier(0.52, -0.8, 0.52, 0.52);
   transform-origin: left;
+}
+
+.logo__icon {
+  width: 132px;
+  height: 47px;
+  fill: var(--color-accent);
 }/*# sourceMappingURL=style.css.map */

@@ -35,9 +35,12 @@
 	<body>
 		<header class="header">
 			<div class="header__container">
-				<a href="#" class="logo header__logo"
-					><img src="img/icon/logo.svg" alt="site's logo"
-				/></a>
+				<a href="#" class="logo header__logo">
+					<!-- <img src="img/icon/logo.svg" alt="site's logo" /> -->
+					<svg class="logo__icon">
+						<use xlink:href="img/icon/icons-sprite.svg#logo"></use>
+					</svg>
+				</a>
 				<div class="header__navigation-wrapper">
 					<nav class="header__navigation navigation">
 						<ul class="navigation__list">
