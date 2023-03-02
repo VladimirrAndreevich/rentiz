@@ -7,6 +7,8 @@
 
 		z-index: -1;
 
+		stroke: var(--color-accent);
+
 		@media (max-width: 1600px) and (min-width: 1130px) {
 			left: clamp(-16.25rem, -47.806rem + 44.68vw, -3.125rem);
 		}

@@ -99,16 +99,18 @@ a {
 
 .hero {
   margin-top: clamp(1.25rem, -0.114rem + 6.82vw, 5.938rem);
+  position: relative;
+}
+.hero .hero__decor {
+  display: none;
 }
 @media (min-width: 1300px) {
-  .hero::after {
-    content: "";
+  .hero .hero__decor {
     position: absolute;
     right: 0;
-    top: 530px;
-    height: 482px;
-    width: 120px;
-    background: url(../img/icon/hero-decor.svg);
+    bottom: -200px;
+    display: block;
+    fill: var(--color-accent);
   }
 }
 .hero__container {
@@ -364,6 +366,7 @@ a {
   position: absolute;
   left: -100px;
   bottom: -100px;
+  stroke: var(--color-accent);
 }
 @media (max-width: 1600px) and (min-width: 1200px) {
   .begin__decor1 {
@@ -421,6 +424,7 @@ a {
   top: -550px;
   left: -50px;
   z-index: -1;
+  stroke: var(--color-accent);
 }
 @media (max-width: 1600px) and (min-width: 1130px) {
   .reviews__decor {
@@ -527,6 +531,7 @@ a {
   position: absolute;
   bottom: -110px;
   right: 0px;
+  fill: var(--color-accent);
 }
 .help__content {
   margin-left: clamp(0.938rem, -0.085rem + 5.11vw, 3.75rem);
