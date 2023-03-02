@@ -10,7 +10,8 @@
 
 	background-color: var(--color-accent);
 
-	&:active {
+	transition: background-color $transition-duration $transition-timing-function;
+	&:hover {
 		background-color: var(--color-accent-darken);
 	}
 }

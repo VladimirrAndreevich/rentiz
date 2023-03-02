@@ -807,9 +807,6 @@ a {
   text-transform: capitalize;
   cursor: pointer;
 }
-.filter__btn button:active {
-  background-color: var(--color-accent-darken);
-}
 @media (max-width: 576px) {
   .filter__btn button {
     padding-top: 12px;
@@ -918,8 +915,9 @@ a {
   line-height: 1.75rem;
   text-transform: capitalize;
   background-color: var(--color-accent);
+  transition: background-color 0.4s ease;
 }
-.button:active {
+.button:hover {
   background-color: var(--color-accent-darken);
 }
 

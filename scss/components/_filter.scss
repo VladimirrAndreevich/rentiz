@@ -20,9 +20,9 @@
 
 			cursor: pointer;
 
-			&:active {
-				background-color: var(--color-accent-darken);
-			}
+			// &:active {
+			// 	background-color: var(--color-accent-darken);
+			// }
 			@media (max-width: 576px) {
 				padding-top: 12px;
 				padding-bottom: 12px;
