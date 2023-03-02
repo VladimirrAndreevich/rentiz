@@ -832,18 +832,14 @@ a {
 .block-filter__type {
   color: #858585;
 }
-.block-filter__type::after {
-  content: "";
-  display: inline-block;
+.block-filter__type._active .block-filter__icon {
+  transform: rotate(180deg);
+}
+.block-filter__icon {
   width: 9px;
   height: 6px;
-  margin-left: 5px;
-  margin-bottom: 1px;
-  background: url("../img/icon/arrow-dropdown.svg");
+  fill: var(--color-accent);
   transition: transform 0.4s ease;
-}
-.block-filter__type._active::after {
-  transform: rotate(180deg);
 }
 .block-filter__button {
   cursor: pointer;

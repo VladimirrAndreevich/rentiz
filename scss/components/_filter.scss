@@ -59,23 +59,36 @@
 	&__type {
 		color: #858585;
 
-		&::after {
-			content: "";
-			display: inline-block;
-			width: 9px;
-			height: 6px;
-			margin-left: 5px;
-			margin-bottom: 1px;
-			background: url("../img/icon/arrow-dropdown.svg");
+		// &::after {
+		// 	content: "";
+		// 	display: inline-block;
+		// 	width: 9px;
+		// 	height: 6px;
+		// 	margin-left: 5px;
+		// 	margin-bottom: 1px;
+		// 	background: url("../img/icon/arrow-dropdown.svg");
 
-			transition: transform $transition-duration $transition-timing-function;
-		}
+		// 	transition: transform $transition-duration $transition-timing-function;
+		// }
 
 		&._active {
-			&::after {
+			// &::after {
+			// 	transform: rotate(180deg);
+			// }
+
+			& .block-filter__icon {
 				transform: rotate(180deg);
 			}
 		}
+	}
+
+	&__icon {
+		width: 9px;
+		height: 6px;
+
+		fill: var(--color-accent);
+
+		transition: transform $transition-duration $transition-timing-function;
 	}
 
 	&__button {
