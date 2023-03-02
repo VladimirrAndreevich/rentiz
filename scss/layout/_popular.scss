@@ -121,29 +121,12 @@
 		line-height: toRem(19px);
 		text-transform: capitalize;
 		color: $color-white-main;
+	}
+	&__icon {
+		width: 22px;
+		height: 22px;
+		margin-right: 4px;
 
-		&::before {
-			content: "";
-
-			display: inline-block;
-			width: 22px;
-			height: 22px;
-			margin-right: 4px;
-		}
-	}
-	&__bed {
-		&::before {
-			background-image: url(../img/icon/residence/double-bed.svg);
-		}
-	}
-	&__bath {
-		&::before {
-			background-image: url(../img/icon/residence/bath.svg);
-		}
-	}
-	&__sqft {
-		&::before {
-			background-image: url(../img/icon/residence/vector-square.svg);
-		}
+		fill: var(--color-accent);
 	}
 }

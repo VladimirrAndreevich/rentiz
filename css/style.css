@@ -274,21 +274,11 @@ a {
   text-transform: capitalize;
   color: #ffffff;
 }
-.characteristics div::before {
-  content: "";
-  display: inline-block;
+.characteristics__icon {
   width: 22px;
   height: 22px;
   margin-right: 4px;
-}
-.characteristics__bed::before {
-  background-image: url(../img/icon/residence/double-bed.svg);
-}
-.characteristics__bath::before {
-  background-image: url(../img/icon/residence/bath.svg);
-}
-.characteristics__sqft::before {
-  background-image: url(../img/icon/residence/vector-square.svg);
+  fill: var(--color-accent);
 }
 
 .choose {
