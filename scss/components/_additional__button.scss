@@ -1,7 +1,7 @@
-$button-bg: #5c67ff;
+$button-bg: var(--color-accent);
 $list-bg: #fff;
-$text-color: #1c3991;
-$text-color-hover: #5c67ff;
+$text-color: $color-bg;
+$text-color-hover: color.scale($color-bg, $whiteness: 60%);
 $menu-icon-transition: transform 300ms cubic-bezier(0.52, -0.8, 0.52, 0.52);
 
 .list-container {
@@ -71,7 +71,7 @@ $menu-icon-transition: transform 300ms cubic-bezier(0.52, -0.8, 0.52, 0.52);
 	&:hover,
 	&:focus {
 		box-shadow: 0px 0px 0px 8px rgba(92, 103, 255, 0.3);
-		background-color: darken($button-bg, 4%);
+		background-color: var(--color-accent-darken);
 	}
 
 	&:focus {
@@ -134,10 +134,10 @@ $menu-icon-transition: transform 300ms cubic-bezier(0.52, -0.8, 0.52, 0.52);
 			display: none;
 		}
 
-		svg {
-			width: 18px;
-			height: 18px;
-		}
+		// svg {
+		// 	width: 18px;
+		// 	height: 18px;
+		// }
 
 		span {
 			display: inline-block;
