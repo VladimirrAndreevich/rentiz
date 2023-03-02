@@ -2,18 +2,30 @@
 	// values: 		min 20px 	max 95px
 	// viewport:	min 320px max 1420px
 	margin-top: clamp(1.25rem, -0.114rem + 6.82vw, 5.938rem);
+	position: relative;
+	.hero__decor {
+		display: none;
+	}
 
 	@media (min-width: 1300px) {
-		&::after {
-			content: "";
+		// &::after {
+		// 	content: "";
+		// 	position: absolute;
+		// 	right: 0;
+		// 	top: 530px;
+
+		// 	height: 482px;
+		// 	width: 120px;
+		// 	background: url(../img/icon/hero-decor.svg);
+		// }
+
+		.hero__decor {
 			position: absolute;
 			right: 0;
-			// top: 60%;
-			top: 530px;
+			bottom: -200px;
+			display: block;
 
-			height: 482px;
-			width: 120px;
-			background: url(../img/icon/hero-decor.svg);
+			fill: var(--color-accent);
 		}
 	}
 	&__container {
