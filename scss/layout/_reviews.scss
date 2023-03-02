@@ -27,7 +27,7 @@
 
 		font-size: toRem(260px);
 		line-height: 82px;
-		color: $color-accent;
+		color: var(--color-accent);
 	}
 
 	&-slide {
@@ -78,7 +78,8 @@
 		}
 		&.swiper-button-disabled {
 			& svg {
-				fill: color.scale($color-white-main, $blackness: 50%);
+				// fill: var(--color-accent-darken);
+				opacity: 0.4;
 				cursor: initial;
 			}
 		}

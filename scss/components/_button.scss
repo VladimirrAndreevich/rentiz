@@ -8,9 +8,9 @@
 	line-height: toRem(28px);
 	text-transform: capitalize;
 
-	background-color: $color-accent;
+	background-color: var(--color-accent);
 
 	&:active {
-		background-color: color.scale($color-accent, $blackness: 20%);
+		background-color: var(--color-accent-darken);
 	}
 }

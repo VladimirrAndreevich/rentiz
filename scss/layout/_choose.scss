@@ -39,7 +39,7 @@
 		height: clamp(6.25rem, 4.795rem + 7.27vw, 11.25rem);
 		border-radius: 50%;
 
-		background-color: color.scale($color-accent, $blackness: 50%);
+		background-color: var(--color-accent-darken);
 
 		& img {
 			// values: 		min 40px 	max 76px
